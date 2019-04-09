@@ -10,4 +10,6 @@ RUN  \
 	make && \
 	make install && \
 	cd /grpc/third_party/protobuf/ && \
-	make install
+	make install && \
+	cd /grpc && \
+	make grpc_cli
